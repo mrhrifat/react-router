@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Posts from './pages/Posts'
 import Contact from './pages/Contact'
-import MainNav from './pages/MainNav'
+import MainNav from './pages/Nav/MainNav'
 import Hello from './pages/Hello'
 import Post from './pages/Post'
 
