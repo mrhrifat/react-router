@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { withRouter } from 'react-router'
 import Posts from './pages/Posts'
 import Contact from './pages/Contact'
 import MainNav from './pages/Nav/MainNav'
@@ -21,8 +22,13 @@ class Lesson2 extends Component {
                         </Route>
                         <Route path='/posts/*' element={<Posts />} />
                         <Route path='/posts/:postId' element={<Post />} />
-                        <Route path='/blog/' element={<Blog />}/>
-                        <Route path='/contact' element={<Contact email={'admin@ceo.com'}/>} />
+                        <Route path='/blog/' element={<Blog />} />
+                        <Route path='/contact' element={
+                            <Contact
+                                email={'admin@ceo.com'}
+                                phone={'+948-954396'}
+                            />}
+                        />
                     </Routes>
                 </div>
             </BrowserRouter >
