@@ -5,7 +5,8 @@ class Contact extends Component {
         return (
             <div>
                 <h6>I am Contact</h6>
-                <p>Mail me to {this.props.email}</p>
+                <p>Mail me at: {this.props.email}</p>
+                <p>Phone: {this.props.phone}</p>
             </div>
         )
     }
